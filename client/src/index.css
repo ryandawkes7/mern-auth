@@ -1,0 +1,41 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Proxima Nova", sans-serif;}
+a { color: coral; text-decoration: unset; }
+ul { margin-left: 1.5rem; list-style: none; }
+button, input[type="submit"] { border: none; background: none; color: unset; cursor: pointer; outline: none; }
+h1, h2, h3, h4, h5, h6, p, ul, ol { margin: 1em 0; }
+
+
+.page {
+  padding: 1rem;
+}
+
+/* Header */
+#header {
+  height: 100px;
+  display: flex; align-items: center; justify-content: space-between;
+  background-color: lightgoldenrodyellow;
+}
+#header .title {
+  margin: 0; padding: 0 1rem;
+  color: lightblue;
+}
+#header .auth-options {
+  display: flex; height: 100%;
+}
+#header .auth-options button {
+  padding: 0 2rem;
+  background-color: coral; color: white; font-size: 1.1rem; font-weight: 500;
+  transition: .4s background-color ease; -webkit-transition: .4s background-color ease;
+}
+#header .auth-options button:hover {
+  background-color: lightcoral;
+}
+
+@media screen and (max-width: 550px) {
+  #header .title {
+    font-size: 1.2rem;
+  }
+  #header .auth-options button {
+    font-size: 0.9rem; padding: 0 0.5rem;
+  }
+}
